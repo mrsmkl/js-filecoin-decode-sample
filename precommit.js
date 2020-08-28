@@ -1,6 +1,6 @@
 
-const methods = require('@keyko-io/filecoin-verification-tools/filecoin/methods')
-const { make } = require('@keyko-io/filecoin-verification-tools/filecoin/get-data')
+const methods = require('@keyko-io/filecoin-verifier-tools/filecoin/methods')
+const { make } = require('@keyko-io/filecoin-verifier-tools/filecoin/get-data')
 
 /*
 const testdata = [
