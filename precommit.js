@@ -1,6 +1,8 @@
 
-const methods = require('@keyko-io/filecoin-verifier-tools/filecoin/methods')
-const { make } = require('@keyko-io/filecoin-verifier-tools/filecoin/get-data')
+const {
+  methods,
+  getData: { make }
+} = require('js-hamt-filecoin')
 
 /*
 const testdata = [
@@ -69,7 +71,7 @@ async function main() {
   }
   // const obj = methods.decode(schema, testdata)
   // console.log(await obj.asObject())
-  const { getData, load } = make('ws://localhost:1234/rpc/v0')
+  const { getData, load } = make('http://localhost:1234/rpc/v0')
   const data = await getData(`@Ha:${process.argv[2]}/1/5`)
   console.log(await methods.decode(schema, data).asObject(load))
   process.exit(0)

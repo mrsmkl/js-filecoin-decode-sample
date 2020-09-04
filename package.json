@@ -13,7 +13,7 @@
   "author": "Sami Mäkelä <mrsmkl@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@keyko-io/filecoin-verifier-tools": "git+https://github.com/keyko-io/filecoin-verifier-tools#7b9aaad7ecc89c5f79feb5395f2421a27c5a656d"
+    "js-hamt-filecoin": "0.0.1"
   },
   "devDependencies": {
     "eslint": "^7.7.0",
